@@ -4,3 +4,5 @@ db.sqlite3
 personalWebsite/__*
 contact/__*
 contact/migrations/__*
+home/__*
+home/migrations/__*
