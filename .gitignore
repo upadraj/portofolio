@@ -1,0 +1,6 @@
+.idea/
+.venv/
+db.sqlite3
+personalWebsite/__*
+contact/__*
+contact/migrations/__*
