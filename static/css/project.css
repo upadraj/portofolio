@@ -42,3 +42,13 @@ li::before {
     border-radius: 50%;
     background-color: #ffffff;
 }
+
+.fixed-width-col {
+    width: 60px;
+    height: 60px;
+    background-color: #333333;
+}
+.fixed-width-col:hover {
+    color: #ffffff;
+    background-color: #bd5d38;
+}
