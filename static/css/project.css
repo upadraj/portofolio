@@ -48,7 +48,13 @@ li::before {
     height: 60px;
     background-color: #333333;
 }
+
 .fixed-width-col:hover {
     color: #ffffff;
     background-color: #bd5d38;
+}
+
+.a-none {
+    text-decoration: unset;
+    color: white;
 }
