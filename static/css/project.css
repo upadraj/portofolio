@@ -1,0 +1,18 @@
+:root {
+    --orange: #bd5d38;
+}
+
+#navbar-menu {
+    height: 80px;
+}
+
+.text-highlight {
+    color: var(--orange);
+}
+
+.about-icon{
+    background-color: #333333;
+    color: #ffffff;
+
+}
+
