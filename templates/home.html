@@ -1,4 +1,6 @@
 {% extends "base.html" %}
+{% load crispy_forms_filters %}
+{% load crispy_forms_tags %}
 {% load static %}
 {% block content %}
     <div class="row bg-primary bg-gradient text-white d-flex justify-content-around align-items-center fw-bold"
@@ -271,6 +273,13 @@
     <hr/>
     <div class="row my-5" id="contact">
         <h1 class="text-orange fw-bolder">Contact Me</h1>
+        <div class="col-10">
+            <form action="#" method="post">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <button class="btn btn-dark text-white" type="submit">send message</button>
+            </form>
+        </div>
     </div>
 
 
