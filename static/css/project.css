@@ -1,18 +1,44 @@
 :root {
     --orange: #bd5d38;
+    --blue: #1a73e8;
 }
 
 #navbar-menu {
     height: 80px;
 }
 
-.text-highlight {
+.text-orange {
     color: var(--orange);
 }
 
-.about-icon{
-    background-color: #333333;
-    color: #ffffff;
-
+.text-blue {
+    color: var(--blue)
 }
 
+.about-icon {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    position: relative;
+    padding-left: 20px;
+}
+
+li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
