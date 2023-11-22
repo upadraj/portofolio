@@ -5,7 +5,8 @@
         <form action="#" method="post">
             {% csrf_token %}
             {{ form|crispy }}
-            <button class="btn btn-dark text-white" type="submit">send message</button>
+            <button class="btn btn-dark text-white"
+                    type="submit">send message</button>
         </form>
     </div>
 </div>
