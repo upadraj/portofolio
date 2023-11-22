@@ -58,3 +58,11 @@ li::before {
     text-decoration: unset;
     color: white;
 }
+
+#scrollToTopBtn {
+    bottom: 60px;
+    cursor: pointer;
+    position: fixed;
+    right: 60px;
+    background-color: var(--orange);
+}

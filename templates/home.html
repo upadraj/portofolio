@@ -5,11 +5,15 @@
 {% block content %}
     <div class="row bg-secondary bg-gradient text-white d-flex justify-content-around align-items-center fw-bold text-uppercase"
          id="navbar-menu">
-                <div class="col-1"><a class="a-none" href="#about">About</a></div>
-                <div class="col-1"><a class="a-none" href="#education">Education</a></div>
+                <div class="col-1"><a class="a-none"
+                                      href="#about">About</a></div>
+                <div class="col-1"><a class="a-none"
+                                      href="#education">Education</a></div>
                 <div class="col-1"><a class="a-none" href="#experience">Experience</a></div>
-                <div class="col-1"><a class="a-none" href="#news-section">News</a></div>
-                <div class="col-1"><a class="a-none" href="#award-honor">Awards</a></div>
+                <div class="col-1"><a class="a-none"
+                                      href="#news-section">News</a></div>
+                <div class="col-1"><a class="a-none"
+                                      href="#award-honor">Awards</a></div>
                 <div class="col-1"><a class="a-none" href="#contact">Contact</a></div>
     </div>
 
@@ -24,6 +28,17 @@
     {% include 'component/award.html' %}
     <div class="m-5"><hr/></div>
     {% include 'component/contact.html' %}
+
+
+      <div class="d-flex justify-content-end mb-5 scroll-to-top" id="scrollToTopBtn">
+          <a class="mb-5" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39"
+                 fill="currentColor" class="mb-5 bi fs-1 bi-arrow-up-circle-fill position-fixed bg-dark rounded-circle border border-2 border-primary"
+                 viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+            </svg>
+          </a>
+    </div>
 
 
 {% endblock content %}
