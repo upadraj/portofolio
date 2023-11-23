@@ -15,9 +15,15 @@ $(document).ready(function() {
   });
 
   $("#icon-hamburger").click(function() {
-    console.log("Testing clicked.")
+    $("#nav-mobile").removeClass("d-none");
+    $("#icon-hamburger").addClass("d-none ");
+     $('#btn-close').removeClass("d-none")
   });
-
+  $("#btn-close").click(function() {
+     $("#nav-mobile").addClass("d-none");
+      $("#icon-hamburger").removeClass("d-none");
+     $('#btn-close').addClass("d-none")
+  });
 });
 
 
