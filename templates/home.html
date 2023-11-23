@@ -3,18 +3,29 @@
 {% load crispy_forms_tags %}
 {% load static %}
 {% block content %}
-    <div class="row bg-secondary bg-gradient text-white d-flex justify-content-around align-items-center fw-bold text-uppercase"
+    <div class="row bg-secondary bg-gradient text-white d-flex justify-content-around align-items-center fw-bold text-uppercase border position-relative"
          id="navbar-menu">
-                <div class="col-1"><a class="a-none"
-                                      href="#about">About</a></div>
-                <div class="col-1"><a class="a-none"
-                                      href="#education">Education</a></div>
-                <div class="col-1"><a class="a-none" href="#experience">Experience</a></div>
-                <div class="col-1"><a class="a-none"
-                                      href="#news-section">News</a></div>
-                <div class="col-1"><a class="a-none"
-                                      href="#award-honor">Awards</a></div>
-                <div class="col-1"><a class="a-none" href="#contact">Contact</a></div>
+        <div class="col-12  position-absolute  text-uppercase name">rajesh Upaddhayaya</div>
+        <div class="col-1"><a class="a-none"
+                              href="#about">About</a></div>
+        <div class="col-1"><a class="a-none"
+                              href="#education">Education</a></div>
+        <div class="col-1"><a class="a-none"
+                              href="#experience">Experience</a></div>
+        <div class="col-1"><a class="a-none"
+                              href="#news-section">News</a></div>
+        <div class="col-1"><a class="a-none"
+                              href="#award-honor">Awards</a></div>
+        <div class="col-1"><a class="a-none" href="#contact">Contact</a></div>
+         <div class="col-1 position-absolute">
+            <button class="d-flex justify-content-center align-items-center"
+                    id="icon-hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                     width="40" height="40" viewBox="0 0 24 24">
+                    <path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"></path>
+                </svg>
+            </button>
+        </div>
     </div>
 
     {% include 'component/about.html' %}
@@ -34,7 +45,9 @@
          id="scrollToTopBtn">
           <a class="mb-5" href="#">
             <svg stroke="currentColor" fill="currentColor" stroke-width="0"
-                 viewBox="0 0 512 512" class="bi fs-1 color-orange border border-1 rounded-circle" height="1em"
+                 viewBox="0 0 512 512"
+                 class="bi fs-1 color-orange border border-1 rounded-circle"
+                 height="1em"
                  width="1em" xmlns="http://www.w3.org/2000/svg"><path
                     d="M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm292 116V256h70.9c10.7 0 16.1-13 8.5-20.5L264.5 121.2c-4.7-4.7-12.2-4.7-16.9 0l-115 114.3c-7.6 7.6-2.2 20.5 8.5 20.5H212v116c0 6.6 5.4 12 12 12h64c6.6 0 12-5.4 12-12z"></path></svg>
           </a>

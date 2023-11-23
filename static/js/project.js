@@ -14,7 +14,10 @@ $(document).ready(function() {
     }
   });
 
-  // Smooth scroll to top when the button is clicked
+  $("#icon-hamburger").click(function() {
+    console.log("Testing clicked.")
+  });
+
 });
 
 

@@ -66,3 +66,34 @@ li::before {
     right: 60px;
     opacity: 0;
 }
+
+#icon-hamburger {
+    height: 50px;
+    width: 60px;
+    background-color: #e74c3c;
+    opacity: 0;
+}
+
+.name {
+    opacity: 0;
+    position: absolute;
+}
+
+@media only screen and (max-width: 500px) {
+    #icon-hamburger {
+        position: fixed;
+        right: 10px;
+        top: 4px;
+        opacity: 100%;
+    }
+
+    .a-none {
+        opacity: 0;
+    }
+
+    .name {
+        opacity: 100%;
+        position: relative;
+    }
+
+}
