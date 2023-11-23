@@ -7,7 +7,7 @@
     height: 60px;
 }
 
-.text-orange {
+.color-orange {
     color: var(--orange);
 }
 
@@ -64,5 +64,5 @@ li::before {
     cursor: pointer;
     position: fixed;
     right: 60px;
-    background-color: var(--orange);
+    opacity: 0;
 }
