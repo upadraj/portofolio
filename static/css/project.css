@@ -20,6 +20,7 @@
     color: #ffffff;
 }
 
+
 ul {
     list-style: none;
     padding: 0;
@@ -73,6 +74,9 @@ li::before {
     background-color: #e74c3c;
 }
 
+#nav-mobile {
+    top: 60px;
+}
 @media only screen and (max-width: 768px) {
     .icon-nav {
         position: absolute;

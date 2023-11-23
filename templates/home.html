@@ -3,7 +3,7 @@
 {% load crispy_forms_tags %}
 {% load static %}
 {% block content %}
-    <div class="row bg-secondary bg-gradient text-white d-flex justify-content-around align-items-center fw-bold text-uppercase"
+    <div class="row bg-secondary bg-gradient text-white d-flex justify-content-around align-items-center fw-bold text-uppercase position-fixed top-0 w-100"
          id="navbar-menu">
         <div class="col-12 d-flex justify-content-start align-items-center d-block d-md-none">
             <h2>rajesh Upaddhayaya</h2>
@@ -33,7 +33,7 @@
         </div>
     </div>
 
-    <div class=" row bg-secondary bg-gradient text-white d-none d-flex justify-content-around align-items-center fw-bold text-uppercase d-md-none "
+    <div class=" row bg-secondary bg-gradient text-white d-none d-flex justify-content-around align-items-center fw-bold text-uppercase d-md-none position-sticky "
          id="nav-mobile">
         <div class="row my-3 "><a class="a-none"
                                   href="#about">About</a></div>
@@ -48,7 +48,6 @@
         <div class="row my-3"><a class="a-none"
                                  href="#contact">Contact</a></div>
     </div>
-
     {% include 'component/about.html' %}
     <div class="m-5"><hr/></div>
     {% include 'component/education.html' %}
