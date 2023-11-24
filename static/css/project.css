@@ -34,7 +34,7 @@ li::before {
     content: '';
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 18px;
     transform: translateY(-50%);
     width: 10px;
     height: 10px;
