@@ -1,3 +1,4 @@
+{% load static %}
 <div class="row my-5 mx-3" id="about">
     <h1 class="fw-bolder color-orange mt-5">Rajesh Upadhayaya</h1>
     <p>Software Developer @ Noventum Custom Software </p>
@@ -40,7 +41,9 @@
     </div>
     <div class="row">
         <div class="col-1 mb-5">
-            <button class="btn btn-warning">Resume</button>
+            <button class="btn btn-warning">
+                <a class="a-none text-black" href="{% static 'docs/ResumeFinal.pdf' %}" target="_blank">Resume</a>
+            </button>
         </div>
     </div>
 </div>
