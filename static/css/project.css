@@ -87,4 +87,8 @@ li::before {
         right: 10px;
         top: 4px;
     }
+    #div-hamburger {
+       top: 1px;
+       right: 2px;
+    }
 }
