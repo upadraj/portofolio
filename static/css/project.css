@@ -78,6 +78,10 @@ li::before {
     top: 60px;
 }
 
+.asteriskField {
+    display: none;
+}
+
 @media only screen and (max-width: 768px) {
     .icon-nav {
         position: absolute;

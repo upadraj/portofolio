@@ -24,6 +24,27 @@ $(document).ready(function() {
       $("#icon-hamburger").removeClass("d-none");
      $('#btn-close').addClass("d-none")
   });
+  $("#form-submission").submit(function(event) {
+      event.preventDefault();
+      $.ajax({
+          url: $(this).attr('action'),
+          type: $(this).attr('method'),
+          data: new FormData(this),
+          processData: false,
+          contentType: false,
+          success: function(data) {
+              $('#successMessage').html('!!Message has been sent to Rajesh!!').show();
+              $('#successMessage').removeClass("d-none");
+              $("#form-submission")[0].reset()
+          },
+          error: function(error) {
+              console.error('Error:', error);
+          }
+      });
+       setTimeout(function(){$('#successMessage').addClass("d-none");},3000);
+      // Prevent the default behavior and stop event propagation
+      return false;
+  })
 });
 
 
